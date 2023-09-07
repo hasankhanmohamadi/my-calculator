@@ -4,7 +4,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
+	background-color: #176B87;
 }
 .calculator{
 	width: 200%;
@@ -40,13 +40,16 @@ body{
 }
 button{
 	padding: 20px;
+	margin: 5px;
 	font-size: 18px;
 	border: none;
+	border: 1px solid #E4F1FF;
+	border-radius: 7px;
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 button:hover{
-	background-color: #f4f4f4;
+	background-color: #AEC3AE;
 }
 .equals{
 	grid-column: 3/5;
