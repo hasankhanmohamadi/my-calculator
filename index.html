@@ -3,33 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>My-Calculator</title>
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="calculator">
-	<input type="text" class="display" disabled>
-	<div class="buttons">
-		<button data-val="7">7</button>
-		<button data-val="8">8</button>
-		<button data-val="9">9</button>
-		<button data-val="/">/</button>
-		<button data-val="4">4</button>
-		<button data-val="5">5</button>
-		<button data-val="6">6</button>
-		<button data-val="*">*</button>
-		<button data-val="1">1</button>
-		<button data-val="2">2</button>
-		<button data-val="3">3</button>
-		<button data-val="-">-</button>
-		<button data-val="0">0</button>
-		<button data-val=".">.</button>
-		<button data-val="+">+</button>
-		<button></button>
-		<button class="clear">C</button>
-		<button class="equals">=</button>
+<body class="flex justify-center items-center h-screen bg-[#176B87] font-sans">
+	<div class="calculator w-72 border border-gray-1000 bg-white shadow-lg p-4">
+		<input type="text" class="display w-full h-10 p-9 text-lg bg-gray-100 text-right mb-6 box-border whitespace-nowrap overflow-x-auto" disabled>
+		<div class="buttons grid grid-cols-4 gap-2">
+			<button data-val="7" class="btn p-4 text-2xl">7</button>
+			<button data-val="8" class="btn p-4 text-2xl">8</button>
+			<button data-val="9" class="btn p-4 text-2xl">9</button>
+			<button data-val="/" class="btn p-4 text-2xl">/</button>
+			<button data-val="4" class="btn p-4 text-2xl">4</button>
+			<button data-val="5" class="btn p-4 text-2xl">5</button>
+			<button data-val="6" class="btn p-4 text-2xl">6</button>
+			<button data-val="*" class="btn p-4 text-2xl">*</button>
+			<button data-val="1" class="btn p-4 text-2xl">1</button>
+			<button data-val="2" class="btn p-4 text-2xl">2</button>
+			<button data-val="3" class="btn p-4 text-2xl">3</button>
+			<button data-val="-" class="btn p-4 text-2xl">-</button>
+			<button data-val="0" class="btn p-4 text-2xl">0</button>
+			<button data-val="." class="btn p-4 text-2xl">.</button>
+			<button data-val="+" class="btn p-4 text-2xl">+</button>
+			<button class="equals col-span-4 bg-blue-500 text-white hover:bg-blue-600 p-4 text-2xl">=</button>
+			<button class="clear col-span-4 bg-red-500 text-white hover:bg-red-600 p-4 text-2xl">C</button>
+		</div>
 	</div>
-</div>
-<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
